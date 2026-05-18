@@ -32,122 +32,42 @@ This repository contains the **weekly reporting dashboard** developed for a high
 
 ---
 
-## 📂 Dashboard Sections
+## 📂 Dashboard Pages
 
-### 🏠 Home
-Entry page showing project name, contract number, and data date.
+The dashboard is built as a **multi-page interactive report** with a sidebar navigation. Each page is a self-contained data view:
 
----
-
-### 🎯 Milestones
-Tracks the three key contractual milestones against baseline:
-
-| Milestone | Planned | Expected | Delay |
-|---|---|---|---|
-| TCC (Taking-Over Certificate) | 17-Feb-27 | 25-Apr-27 | +67 days |
-| PAC (Provisional Acceptance) | 17-Apr-27 | 22-Jun-27 | +66 days |
-| FAC (Final Acceptance) | 17-Jul-27 | 16-Sep-27 | +61 days |
-
-Also includes overall S-curve with monthly planned vs. actual amounts (Aug 2025 – Sep 2027).
-
----
-
-### ⚙️ Engineering
-
-Tracks progress across Base Design and Detailed Design for the Electrical discipline.
-
-| Metric | Value |
+| Page | What it shows |
 |---|---|
-| Planned % | 24.46% |
-| Actual % | 0.00% |
-| Variance | **−53 days** |
-| Expected Finish | 12 Apr 2027 |
-
-**Activity breakdown:**
-
-| Activity | Planned Finish | Expected Finish | Schedule % | Total Float |
-|---|---|---|---|---|
-| Base Design | 28-Jun-26 | 30-Jun-26 | 0.00% | +16 |
-| Detailed Design | 04-Feb-27 | 12-Apr-27 | 1.10% | **−53** |
+| **Home** | Project identity card — name, contract number, data date |
+| **Milestones** | KPI cards for 3 contractual dates + overall S-curve chart |
+| **Engineering** | Planned % vs. actual %, variance, activity-level progress table |
+| **Procurement** | Procurement cycle stage tracking + item-level progress bar chart |
+| **Site Works** | Trade-level schedule % vs. progress % with variance |
+| **Progress** | S-curves, work-in-progress table, 4-week lookahead, photos, AOC log |
 
 ---
 
-### 🚚 Procurement
+## ⚙️ Technical Implementation
 
-Monitors the full procurement cycle (PO → Manufacture → ITP → FAT → FAT Report Approval) across 4 material categories.
+### Data model
+- Unified data model aggregating schedule exports, procurement logs, and cost data into a single source of truth
+- Relationships built between activity IDs, procurement items, and cost line items
 
-| Metric | Value |
-|---|---|
-| Planned % | 1.70% |
-| Actual % | **19.56%** ✅ ahead of plan |
-| Variance | −50 days |
-| Planned Finish | 26-Oct-26 |
-| Expected Finish | 03-Jan-27 |
+### KPI calculations
+- **Planned %** — time-weighted progress derived from baseline schedule
+- **Actual %** — reported progress mapped against activity completion
+- **Variance** — deviation in calendar days between planned and expected finish
+- **SPI (Schedule Performance Index)** — actual % / planned % per activity
+- **Total Float** — slack days before an activity hits the critical path
 
-**Item-level progress (Schedule % / Progress %):**
-
-| Item | Schedule % | Progress % |
-|---|---|---|
-| Stubs & Templates | 76.84% | 60.16% |
-| Conductors | 55.95% | 0.00% |
-| Hardware & Fittings | 0.00% | 0.00% |
-| Steel Towers | 0.00% | 0.00% |
-
-**FAT Status:**
-
-| Status | Count |
-|---|---|
-| Completed | 3 |
-| In Progress | 7 |
-| Not Started | 21 |
-
----
-
-### 🏗️ Site Works
-
-| Metric | Value |
-|---|---|
-| Planned % | 2.83% |
-| Actual % | 0.00% |
-| Variance | **−54 days** |
-| Expected Finish | 28 Mar 2027 |
-
-| Trade | Schedule % | Progress % |
-|---|---|---|
-| Construction | 7.78% | 0.00% |
-| Installation | 0.00% | 0.00% |
-
----
-
-### 📈 Progress
-
-Five sub-sections:
-
-#### S-Curves
-Cumulative and monthly cost tracking across all project phases:
-- Project Preparation
-- Engineering
-- Equipment & Material
-- Construction & Installation
-- Testing & Commissioning
-- Project Close Out
-
-#### Work in Progress
-Activity-level detail for all in-progress engineering tasks, including planned vs. actual start, expected finish, schedule %, progress %, and total float.
-
-#### Lookahead (4-Week)
-Forward-looking schedule covering General and Engineering (Electrical), showing upcoming planned activities and their expected finish dates.
-
-#### Photos
-Site progress photos (conductor reels, crane operations, tower erection works).
-
-#### AOC — Areas of Concern
-
-| Type | Issue | Impact | Action | Owner |
-|---|---|---|---|---|
-| External | SEC changed insulator type (Porcelain → Composite Silicone Rubber) | Increased hardware delivery lead time | Contract amendment | SEC |
-| External | Route plan change | Delays engineering & construction | Contract amendment | SEC |
-| Internal | Delay in latticed steel structure manufacturing | Delays tower erection | Expedite manufacturing | Procurement |
+### Visualizations built
+- Dynamic **S-curves** — cumulative & monthly planned / actual / remaining (dual Y-axis)
+- **Progress bar charts** — grouped planned vs. actual per workstream
+- **Activity status donut/bar charts** — Completed / In Progress / Not Started breakdown
+- **Procurement cycle tracker** — stage-by-stage status across multiple items
+- **Work-in-progress table** — filterable by discipline with conditional formatting on float & variance
+- **4-week lookahead table** — forward schedule sorted by planned start
+- **AOC log table** — risk register with type, impact, action, and owner columns
 
 ---
 
