@@ -24,10 +24,6 @@ This repository contains the **weekly reporting dashboard** developed for a high
 | **Client** | SEC (Saudi Electricity Company) |
 | **Data Date** | 19 March 2026 |
 | **Project Timeline** | Aug 2025 → Sep 2027 |
-| **Planned TCC** | 17 Feb 2027 |
-| **Expected TCC** | 25 Apr 2027 |
-| **Planned FAC** | 17 Jul 2027 |
-| **Expected FAC** | 16 Sep 2027 |
 | **Developed by** | Karim Hossam |
 
 ---
