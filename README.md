@@ -54,7 +54,7 @@ Also includes overall S-curve with monthly planned vs. actual amounts (Aug 2025 
 
 ### ⚙️ Engineering
 
-Tracks progress across Base Design and Detailed Design for Civil and Electrical disciplines.
+Tracks progress across Base Design and Detailed Design for the Electrical discipline.
 
 | Metric | Value |
 |---|---|
@@ -65,12 +65,10 @@ Tracks progress across Base Design and Detailed Design for Civil and Electrical 
 
 **Activity breakdown:**
 
-| Activity | Discipline | Planned Finish | Expected Finish | Schedule % | Total Float |
-|---|---|---|---|---|---|
-| Base Design | Civil | 23-Apr-26 | 06-May-26 | 60.00% | −33 |
-| Base Design | Electrical | 28-Jun-26 | 30-Jun-26 | 0.00% | +16 |
-| Detailed Design | Civil | 03-Jun-26 | 16-Jun-26 | 28.24% | −50 |
-| Detailed Design | Electrical | 04-Feb-27 | 12-Apr-27 | 1.10% | **−53** |
+| Activity | Planned Finish | Expected Finish | Schedule % | Total Float |
+|---|---|---|---|---|
+| Base Design | 28-Jun-26 | 30-Jun-26 | 0.00% | +16 |
+| Detailed Design | 04-Feb-27 | 12-Apr-27 | 1.10% | **−53** |
 
 ---
 
@@ -138,10 +136,10 @@ Cumulative and monthly cost tracking across all project phases:
 Activity-level detail for all in-progress engineering tasks, including planned vs. actual start, expected finish, schedule %, progress %, and total float.
 
 #### Lookahead (4-Week)
-Forward-looking schedule covering General, Engineering (Civil + Electrical), showing upcoming planned activities and their expected finish dates.
+Forward-looking schedule covering General and Engineering (Electrical), showing upcoming planned activities and their expected finish dates.
 
 #### Photos
-Site progress photos (augering, conductor reels, crane operations, geotechnical works).
+Site progress photos (conductor reels, crane operations, tower erection works).
 
 #### AOC — Areas of Concern
 
@@ -150,8 +148,6 @@ Site progress photos (augering, conductor reels, crane operations, geotechnical 
 | External | SEC changed insulator type (Porcelain → Composite Silicone Rubber) | Increased hardware delivery lead time | Contract amendment | SEC |
 | External | Route plan change | Delays engineering & construction | Contract amendment | SEC |
 | Internal | Delay in latticed steel structure manufacturing | Delays tower erection | Expedite manufacturing | Procurement |
-| Internal | Delay in augering & foundation works | Delays 2nd stage foundation | Additional subcontractor resources | PM Team |
-| Internal | Delay in access roads & structure pads | Delays augering start | Additional subcontractor resources | PM Team |
 
 ---
 
@@ -159,7 +155,6 @@ Site progress photos (augering, conductor reels, crane operations, geotechnical 
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-![Primavera P6](https://img.shields.io/badge/Primavera_P6-CC2927?style=for-the-badge&logo=oracle&logoColor=white)
 
 | Skill | Application |
 |---|---|
@@ -176,10 +171,9 @@ Site progress photos (augering, conductor reels, crane operations, geotechnical 
 
 ```
 📦 epc-weekly-report
- ┣ 📊 Report.pbix              # Power BI dashboard file
  ┣ 📄 README.md                # This file
  ┣ 📁 data/
- ┃ ┣ 📄 schedule_export.xlsx   # Primavera P6 schedule export
+ ┃ ┣ 📄 schedule_export.xlsx   # Schedule data export
  ┃ ┣ 📄 procurement_log.xlsx   # Procurement cycle tracker
  ┃ ┗ 📄 cost_data.xlsx         # Monthly cost actuals
  ┗ 📁 exports/
