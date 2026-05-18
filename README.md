@@ -90,34 +90,34 @@ The dashboard is built as a **multi-page interactive report** with a sidebar nav
 ## 🖼️ Screenshots
 
 ### Home
-![Home](./Example_page-0001.jpg)
+![Home](./screenshots/Example_page-0001.jpg)
 
 ### Milestones
 ![Milestones](./screenshots/Example_page-0002.jpg)
 
 ### Engineering
-![Engineering](./Example_page-0003.jpg)
+![Engineering](./screenshots/Example_page-0003.jpg)
 
 ### Procurement
-![Procurement](./Example_page-0004.jpg)
+![Procurement](./screenshots/Example_page-0004.jpg)
 
 ### Site Works
-![Site Works](./Example_page-0005.jpg)
+![Site Works](./screenshots/Example_page-0005.jpg)
 
 ### Progress — S-Curves
-![S-Curves](./Example_page-0006.jpg)
+![S-Curves](./screenshots/Example_page-0006.jpg)
 
 ### Progress — Work in Progress
-![Work in Progress](./Example_page-0007.jpg)
+![Work in Progress](./screenshots/Example_page-0007.jpg)
 
 ### Progress — Lookahead
-![Lookahead](./Example_page-0008.jpg)
+![Lookahead](./screenshots/Example_page-0008.jpg)
 
 ### Progress — Photos
-![Photos](./Example_page-0009.jpg)
+![Photos](./screenshots/Example_page-0009.jpg)
 
 ### Progress — AOC
-![AOC](./Example_page-0010.jpg)
+![AOC](./screenshots/Example_page-0010.jpg)
 
 ---
 
