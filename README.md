@@ -21,8 +21,13 @@ This repository contains the **weekly reporting dashboard** developed for a high
 | Field | Details |
 |---|---|
 | **Project Type** | EPC — High-Voltage Overhead Transmission Line |
+| **Client** | SEC (Saudi Electricity Company) |
 | **Data Date** | 19 March 2026 |
 | **Project Timeline** | Aug 2025 → Sep 2027 |
+| **Planned TCC** | 17 Feb 2027 |
+| **Expected TCC** | 25 Apr 2027 |
+| **Planned FAC** | 17 Jul 2027 |
+| **Expected FAC** | 16 Sep 2027 |
 | **Developed by** | Karim Hossam |
 
 ---
@@ -82,11 +87,46 @@ The dashboard is built as a **multi-page interactive report** with a sidebar nav
 
 ---
 
+## 🖼️ Screenshots
+
+### Home
+![Home](./Example_page-0001.jpg)
+
+### Milestones
+![Milestones](./Example_page-0002.jpg)
+
+### Engineering
+![Engineering](./Example_page-0003.jpg)
+
+### Procurement
+![Procurement](./Example_page-0004.jpg)
+
+### Site Works
+![Site Works](./Example_page-0005.jpg)
+
+### Progress — S-Curves
+![S-Curves](./Example_page-0006.jpg)
+
+### Progress — Work in Progress
+![Work in Progress](./Example_page-0007.jpg)
+
+### Progress — Lookahead
+![Lookahead](./Example_page-0008.jpg)
+
+### Progress — Photos
+![Photos](./Example_page-0009.jpg)
+
+### Progress — AOC
+![AOC](./Example_page-0010.jpg)
+
+---
+
 ## 📁 Repository Structure
 
 ```
 📦 epc-weekly-report
  ┣ 📄 README.md                # This file
+ ┣ 📁 screenshots/             # Dashboard page screenshots
  ┣ 📁 data/
  ┃ ┣ 📄 schedule_export.xlsx   # Schedule data export
  ┃ ┣ 📄 procurement_log.xlsx   # Procurement cycle tracker
