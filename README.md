@@ -93,7 +93,7 @@ The dashboard is built as a **multi-page interactive report** with a sidebar nav
 ![Home](./Example_page-0001.jpg)
 
 ### Milestones
-![Milestones](./Example_page-0002.jpg)
+![Milestones](./screenshots/Example_page-0002.jpg)
 
 ### Engineering
 ![Engineering](./Example_page-0003.jpg)
